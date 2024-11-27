@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор з історією</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="history">
+      <h2>Історія</h2>
+      <div id="history-output"></div>
+    </div>
+    <div class="main">
+      <div class="display">
+        <input type="text" id="display" readonly>
+      </div>
+      <div class="buttons">
+        <!-- Кнопки -->
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator" data-operation="divide">÷</button>
+
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator" data-operation="multiply">×</button>
+
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator" data-operation="subtract">-</button>
+
+        <button class="number">0</button>
+        <button class="clear">AC</button>
+        <button class="equals">=</button>
+        <button class="operator" data-operation="add">+</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
